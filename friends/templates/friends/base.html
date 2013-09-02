@@ -1,0 +1,45 @@
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Friendship</title>
+    <meta name="description" content="">
+    <meta name="author" content="Yin Li">
+    <link rel="stylesheet" href="{% static "bootstrap.css" %}">
+    <link rel="stylesheet" href="{% static "grid.css" %}">
+    <link rel="stylesheet" href="{% static "navbar.css" %}">
+    <link rel="stylesheet" href="{% static "jumbotron.css" %}">
+</head>
+
+<body>
+<div class="container">
+      <!-- Static navbar -->
+      <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="{% url 'friends:home' %}">Friends App</a>
+        </div>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="{% url 'friends:home' %}">Connect</a></li>
+            <li><a href="{% url 'friends:home' %}">Interests</a></li>
+            <li><a href="{% url 'friends:home' %}">Availability</a></li>
+            {% if user.is_authenticated %}
+                <li><a href="{% url 'friends:home' %}">{{ user.username }}</a></li>
+                <li><a href="{% url 'account_logout' %}">Logout</a></li>
+            {% else %}
+                <li><a href="{% url 'account_login' %}">Login</a></li>
+            {% endif %}
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+</div> <!-- container -->
+
+{% block content %}Empty page{% endblock %}
+
+</body>
+
+</html>

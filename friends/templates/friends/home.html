@@ -1,0 +1,13 @@
+{% extends "friends/base.html" %}
+
+{% block content %}
+<h1>Welcome to Friends App</h1>
+{% load socialaccount %}
+
+<!--if no one is logged in, display login link-->
+{% if not user.is_authenticated %}
+    {% providers_media_js %}
+    <a href="{% provider_login_url "facebook" method="js_sdk" %}">Facebook Connect</a>
+{% endif %}
+
+{% endblock %}
