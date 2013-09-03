@@ -2,6 +2,26 @@
 
 {% block content %}
 
+<!--dropdown to select activity-->
+<span> I want to
+<select form="connectform">
+    {% for act in activities %}
+        <option value="{{ act.name }}">{{ act.name }}</option>
+    {% endfor %}
+</select>
+ on
+<select>
+    {% for t in times %}
+        <option value="{{ t }}">{{ t }}</option>
+    {% endfor %}
+</select>
+
+<form action="#" id="connectform">
+  <input type="submit">
+</form>
+</span>
+
+    <!-- this is some info pulled from a facebook account that can be formatted/displayed -->
     {% for account in user.socialaccount_set.all %}
         <h2 style="text-transform:capitalize;">{{ account.provider }} account data</h2>
         <p><img width="50" height="50" src="{{ account.get_avatar_url }}" /></p>
@@ -12,5 +32,4 @@
         <p>Email: {{ account.extra_data.email}}</p>
         <p>Profile Link: <a href="{{ account.extra_data.link }}">{{ account.extra_data.link }}</a></p>
     {% endfor %}
-
 {% endblock %}

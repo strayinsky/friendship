@@ -24,7 +24,7 @@
           <a class="navbar-brand" href="{% url 'friends:home' %}">Friends App</a>
         </div>
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="{% url 'friends:home' %}">Connect</a></li>
+            <li class="active"><a href="{% url 'friends:connect' %}">Connect</a></li>
             <li><a href="{% url 'friends:home' %}">Interests</a></li>
             <li><a href="{% url 'friends:home' %}">Availability</a></li>
             {% if user.is_authenticated %}
