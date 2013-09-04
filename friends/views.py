@@ -1,6 +1,8 @@
 from django.http import HttpResponse, request
+from django.views.generic import UpdateView
 from django.views.generic.base import View, TemplateResponseMixin, TemplateView
-from friends.models import Activity
+from friends.forms import ActivitiesForm
+from friends.models import Activity, Profile
 
 
 class HomeView(TemplateView):
@@ -19,3 +21,10 @@ class ConnectView(TemplateView):
             print act.name
         context['times'] = {"Friday", "Saturday", "Sunday", "Monday"}
         return context
+
+
+class InterestsView(UpdateView):
+    template_name = "friends/interests.html"
+    form_class = ActivitiesForm
+    model = Profile
+    success_url = '/friends'#this is required
