@@ -24,10 +24,11 @@
           <a class="navbar-brand" href="{% url 'friends:home' %}">Friends App</a>
         </div>
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="{% url 'friends:connect' %}">Connect</a></li>
-            <li><a href="{% url 'friends:home' %}">Interests</a></li>
-            <li><a href="{% url 'friends:home' %}">Availability</a></li>
             {% if user.is_authenticated %}
+                <!--following links should only show up if folks are logged in-->
+                <li class="active"><a href="{% url 'friends:connect' %}">Connect</a></li>
+                <li><a href="{% url 'friends:interests' user.id %}">Interests</a></li>
+                <li><a href="{% url 'friends:home' %}">Availability</a></li>
                 <li><a href="{% url 'friends:home' %}">{{ user.username }}</a></li>
                 <li><a href="{% url 'account_logout' %}">Logout</a></li>
             {% else %}

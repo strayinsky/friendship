@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a116ba98-3735-4cc8-bf57-6cd7093dce11" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/friends/forms.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/friends/templates/friends/interests.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/friendship/sqlite3.db" afterPath="$PROJECT_DIR$/friendship/sqlite3.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/friends/admin.py" afterPath="$PROJECT_DIR$/friends/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/friends/models.py" afterPath="$PROJECT_DIR$/friends/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/friends/templates/friends/base.html" afterPath="$PROJECT_DIR$/friends/templates/friends/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/friends/forms.py" afterPath="$PROJECT_DIR$/friends/forms.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/friends/urls.py" afterPath="$PROJECT_DIR$/friends/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/friends/views.py" afterPath="$PROJECT_DIR$/friends/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -18,17 +16,17 @@
     <file path="/models.py" changelist="a116ba98-3735-4cc8-bf57-6cd7093dce11" time="1378245578106" ignored="false" />
     <file path="$PROJECT_DIR$/../../foodcritic/food/models.py" changelist="a116ba98-3735-4cc8-bf57-6cd7093dce11" time="1377970803168" ignored="false" />
     <file path="/admin.py" changelist="a116ba98-3735-4cc8-bf57-6cd7093dce11" time="1378244919546" ignored="false" />
-    <file path="/urls.py" changelist="a116ba98-3735-4cc8-bf57-6cd7093dce11" time="1378276866703" ignored="false" />
+    <file path="/urls.py" changelist="a116ba98-3735-4cc8-bf57-6cd7093dce11" time="1378361961153" ignored="false" />
     <file path="/views.py" changelist="a116ba98-3735-4cc8-bf57-6cd7093dce11" time="1378277744196" ignored="false" />
     <file path="$PROJECT_DIR$/../../foodcritic/foodcritic/settings.py" changelist="a116ba98-3735-4cc8-bf57-6cd7093dce11" time="1377970865419" ignored="false" />
     <file path="$PROJECT_DIR$/../../foodcritic/foodcritic/urls.py" changelist="a116ba98-3735-4cc8-bf57-6cd7093dce11" time="1377970963798" ignored="false" />
     <file path="/home.html" changelist="a116ba98-3735-4cc8-bf57-6cd7093dce11" time="1378074039212" ignored="false" />
-    <file path="/base.html" changelist="a116ba98-3735-4cc8-bf57-6cd7093dce11" time="1378189269538" ignored="false" />
+    <file path="/base.html" changelist="a116ba98-3735-4cc8-bf57-6cd7093dce11" time="1378362110959" ignored="false" />
     <file path="$PROJECT_DIR$/../../goodfood/foodadvisor/templates/foodadvisor/home.html" changelist="a116ba98-3735-4cc8-bf57-6cd7093dce11" time="1378069844868" ignored="false" />
     <file path="/connect.html" changelist="a116ba98-3735-4cc8-bf57-6cd7093dce11" time="1378191107637" ignored="false" />
     <file path="/Dummy.txt" changelist="a116ba98-3735-4cc8-bf57-6cd7093dce11" time="1378097869305" ignored="false" />
-    <file path="/forms.py" changelist="a116ba98-3735-4cc8-bf57-6cd7093dce11" time="1378278855675" ignored="false" />
-    <file path="/interests.html" changelist="a116ba98-3735-4cc8-bf57-6cd7093dce11" time="1378277352080" ignored="false" />
+    <file path="/forms.py" changelist="a116ba98-3735-4cc8-bf57-6cd7093dce11" time="1378348165943" ignored="false" />
+    <file path="/interests.html" changelist="a116ba98-3735-4cc8-bf57-6cd7093dce11" time="1378363547828" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,39 +46,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/friendship/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="153" column="18" selection-start="5272" selection-end="5272" vertical-scroll-proportion="0.31753555">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/friends/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file:///usr/local/Cellar/python/2.7.5/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/django/core/handlers/base.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="0" selection-start="3748" selection-end="3748" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="interests.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/friends/templates/friends/interests.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="56" selection-start="111" selection-end="111" vertical-scroll-proportion="-2.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="connect.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/friends/templates/friends/connect.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="8" selection-start="270" selection-end="270" vertical-scroll-proportion="0.5">
+            <state line="17" column="52" selection-start="611" selection-end="611" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#607#641#0" expanded="true" />
+                <element signature="e#0#45#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -89,8 +69,10 @@
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/friends/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="148" selection-end="148" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="8" column="101" selection-start="480" selection-end="480" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#51#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -99,6 +81,15 @@
         <entry file="file:///usr/local/Cellar/python/2.7.5/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/django/utils/importlib.py">
           <provider selected="true" editor-type-id="text-editor">
             <state line="34" column="0" selection-start="1178" selection-end="1178" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/friends/templates/friends/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="81" selection-start="1129" selection-end="1129" vertical-scroll-proportion="-13.5">
               <folding />
             </state>
           </provider>
@@ -115,12 +106,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forms.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="forms.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/friends/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="89" selection-start="477" selection-end="477" vertical-scroll-proportion="0.38260868">
+            <state line="25" column="53" selection-start="1151" selection-end="1151" vertical-scroll-proportion="-5.88">
               <folding>
-                <element signature="e#0#34#0" expanded="true" />
+                <element signature="e#0#27#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="interests.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/friends/templates/friends/interests.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="0" selection-start="206" selection-end="206" vertical-scroll-proportion="-4.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/friends/admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="26" selection-start="226" selection-end="226" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -130,15 +141,6 @@
         <entry file="file:///usr/local/Cellar/python/2.7.5/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/django/forms/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state line="1027" column="8" selection-start="42892" selection-end="42892" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/friends/templates/friends/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="63" selection-start="1068" selection-end="1068" vertical-scroll-proportion="-3.3333333">
               <folding />
             </state>
           </provider>
@@ -165,15 +167,15 @@
         <option value="$PROJECT_DIR$/friends/url.py" />
         <option value="$PROJECT_DIR$/friendship/urls.py" />
         <option value="$PROJECT_DIR$/friends/templates/friends/home.html" />
-        <option value="$PROJECT_DIR$/friendship/settings.py" />
-        <option value="$PROJECT_DIR$/friends/templates/friends/base.html" />
         <option value="$PROJECT_DIR$/friends/templates/friends/connect.html" />
         <option value="$PROJECT_DIR$/friends/admin.py" />
-        <option value="$PROJECT_DIR$/friends/urls.py" />
-        <option value="$PROJECT_DIR$/friends/templates/friends/interests.html" />
-        <option value="$PROJECT_DIR$/friends/views.py" />
         <option value="$PROJECT_DIR$/friends/models.py" />
+        <option value="$PROJECT_DIR$/friends/views.py" />
         <option value="$PROJECT_DIR$/friends/forms.py" />
+        <option value="$PROJECT_DIR$/friends/urls.py" />
+        <option value="$PROJECT_DIR$/friends/templates/friends/base.html" />
+        <option value="$PROJECT_DIR$/friends/templates/friends/interests.html" />
+        <option value="$PROJECT_DIR$/friendship/settings.py" />
       </list>
     </option>
   </component>
@@ -518,39 +520,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/friendship/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="202" column="27" selection-start="6561" selection-end="6561" vertical-scroll-proportion="-14.32">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/friends/tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/friends/templates/friends/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="63" selection-start="1068" selection-end="1068" vertical-scroll-proportion="-3.3333333">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/friends/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="26" selection-start="226" selection-end="226" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/friends/templates/friends/interests.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="56" selection-start="111" selection-end="111" vertical-scroll-proportion="-2.0">
           <folding />
         </state>
       </provider>
@@ -585,24 +557,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/friends/urls.py">
+    <entry file="file:///usr/local/Cellar/python/2.7.5/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/django/forms/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="148" selection-end="148" vertical-scroll-proportion="0.0">
+        <state line="1027" column="8" selection-start="42892" selection-end="42892" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/friends/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="26" selection-start="226" selection-end="226" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/friends/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/Cellar/python/2.7.5/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/django/forms/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1027" column="8" selection-start="42892" selection-end="42892" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="17" column="52" selection-start="611" selection-end="611" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -617,10 +593,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/friends/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="89" selection-start="477" selection-end="477" vertical-scroll-proportion="0.38260868">
+        <state line="25" column="53" selection-start="1151" selection-end="1151" vertical-scroll-proportion="-5.88">
           <folding>
-            <element signature="e#0#34#0" expanded="true" />
+            <element signature="e#0#27#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/friends/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="101" selection-start="480" selection-end="480" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/friends/templates/friends/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="81" selection-start="1129" selection-end="1129" vertical-scroll-proportion="-13.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/friends/templates/friends/interests.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="206" selection-end="206" vertical-scroll-proportion="-4.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/friendship/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="153" column="18" selection-start="5272" selection-end="5272" vertical-scroll-proportion="0.31753555">
+          <folding />
         </state>
       </provider>
     </entry>
