@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from allauth.account.signals import user_signed_up, user_logged_in
 
 #this is a simple model to store all of the activities and the group they fall in
 class Activity(models.Model):
@@ -46,10 +47,19 @@ class Profile(models.Model):
     likes = models.ManyToManyField("self", related_name="liked by")
 
     #many to many relationship with Activity
-    activities = models.ManyToManyField(Activity,null=True)
+    activities = models.ManyToManyField(Activity, null=True)
+
+    color = models.CharField(max_length=20)
 
     def __unicode__(self):
         return self.user.username
+
+#right after someone signs up, create a new profile for them
+@receiver(user_signed_up)
+def create_profile(request, user, **kwargs):
+    print "Create profile for",user
+    p = Profile(user=user)
+    p.save()
 
 class Location(models.Model):
     homezip = models.CharField(max_length=5)

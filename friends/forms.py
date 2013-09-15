@@ -1,4 +1,5 @@
 from itertools import chain
+from django.dispatch import receiver
 from django.forms import ModelForm
 from django.utils import timezone
 from django import forms
@@ -11,20 +12,26 @@ from haystack.query import SearchQuerySet
 from friends.models import Profile, Activity
 from django.forms.models import inlineformset_factory, BaseInlineFormSet
 
+
 #custom widget so Activities checkboxes can be organized by group
 class ActivitiesByCategory(forms.CheckboxSelectMultiple):
     def render(self, name, value, attrs=None, choices=()):
         if value is None: value = []
         has_id = attrs and 'id' in attrs
         final_attrs = self.build_attrs(attrs, name=name)
-        output = [u'<ul>']
+
+        #the div that stores the main output
+        output = [u'<div>']
+
         # Normalize to strings
         str_values = set([force_unicode(v) for v in value])
+
         categories = Activity.objects.values('group').distinct()
         for category in categories:
             groupname = category['group']
-            output.append(u'<li>%s</li>' % groupname)
-            output.append(u'<ul>')
+            output.append(u'<h3>%s</h3>' % groupname)
+            #div storing choices under each category
+            output.append(u'<div>')
             del self.choices
             self.choices = []
             activities = Activity.objects.filter(group=groupname)
@@ -40,11 +47,12 @@ class ActivitiesByCategory(forms.CheckboxSelectMultiple):
                 option_value = force_unicode(option_value)
                 rendered_cb = cb.render(name, option_value)
                 option_label = conditional_escape(force_unicode(option_label))
-                output.append(u'<li><label%s>%s %s</label></li>' % (label_for, rendered_cb, option_label))
-            output.append(u'</ul>')
-            output.append(u'</li>')
-        output.append(u'</ul>')
+                output.append(
+                    u'<div class="checkbox"><label%s>%s %s</label></div>' % (label_for, rendered_cb, option_label))
+            output.append(u'</div>')
+        output.append(u'</div>')
         return mark_safe(u'\n'.join(output))
+
 
 class ActivitiesForm(forms.ModelForm):
     #since i want to override the widget to checkbox, i need to override the entire field
@@ -55,4 +63,5 @@ class ActivitiesForm(forms.ModelForm):
     class Meta:
         model = Profile
         exclude = ['user', 'likes']
+
 
