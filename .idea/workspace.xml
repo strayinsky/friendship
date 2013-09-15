@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a116ba98-3735-4cc8-bf57-6cd7093dce11" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/friendship/sqlite3.db" afterPath="$PROJECT_DIR$/friendship/sqlite3.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/friends/forms.py" afterPath="$PROJECT_DIR$/friends/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/friends/templates/friends/interests.html" afterPath="$PROJECT_DIR$/friends/templates/friends/interests.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/friends/models.py" afterPath="$PROJECT_DIR$/friends/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/friendship/settings.py" afterPath="$PROJECT_DIR$/friendship/settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="friendship.iws" />
