@@ -3,6 +3,9 @@ from django.contrib.auth.models import User
 from allauth.account.signals import user_signed_up, user_logged_in
 
 #this is a simple model to store all of the activities and the group they fall in
+from django.dispatch import receiver
+
+
 class Activity(models.Model):
     name = models.CharField(max_length=200)
     group = models.CharField(max_length=200)
@@ -57,9 +60,10 @@ class Profile(models.Model):
 #right after someone signs up, create a new profile for them
 @receiver(user_signed_up)
 def create_profile(request, user, **kwargs):
-    print "Create profile for",user
+    print "Create profile for", user
     p = Profile(user=user)
     p.save()
+
 
 class Location(models.Model):
     homezip = models.CharField(max_length=5)
