@@ -1,1 +1,1 @@
-web: gunicorn_django
+web: gunicorn friendship.wsgi:application
