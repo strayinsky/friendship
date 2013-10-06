@@ -30,8 +30,14 @@ class ProfileView(UpdateView):
     def get_object(self, queryset=None):
         return self.request.user.profile
 
+
 def checkprofile(request):
-    foo = request.user.profile
-    if foo.profile_complete():
+    #right after someone signs up, create a new profile for them if they don't have one
+    if not hasattr(request.user, 'profile'):
+        p = Profile(user=request.user)
+        p.save()
+    else:
+        p = request.user.profile
+    if p.profile_complete():
         return HttpResponseRedirect("/friends/connect")
     return HttpResponseRedirect("/friends/profile")

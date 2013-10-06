@@ -68,12 +68,12 @@ class Profile(models.Model):
 
         return False
 
-#right after someone signs up, create a new profile for them
-@receiver(user_signed_up)
-def create_profile(request, user, **kwargs):
-    print "Create profile for", user
-    p = Profile(user=user)
-    p.save()
+# right after someone signs up, create a new profile for them
+# @receiver(user_signed_up):
+# def create_profile(request, user, **kwargs):
+#     print "Create profile for", user
+#     p = Profile(user=user)
+#     p.save()
 
 
 class Location(models.Model):
