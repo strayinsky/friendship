@@ -65,3 +65,4 @@ class ActivitiesForm(forms.ModelForm):
         exclude = ['user', 'likes']
 
 
+

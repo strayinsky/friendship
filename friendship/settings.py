@@ -199,7 +199,7 @@ LOGGING = {
 
 LOGIN_URL = '/friends'
 
-LOGIN_REDIRECT_URL = '/friends'
+LOGIN_REDIRECT_URL = '/friends/checkprofile'
 
 ACCOUNT_LOGOUT_REDIRECT_URL = '/friends'
 

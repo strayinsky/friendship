@@ -57,6 +57,17 @@ class Profile(models.Model):
     def __unicode__(self):
         return self.user.username
 
+
+    #profile is considered complete if user likes at least one activity and has answered favorite color question
+    def profile_complete(self):
+        print "checking if profile is complete"
+        for a in self.activities.all():
+            print a.name
+        if len(self.activities.all()) > 2 and self.color != "":
+            return True
+
+        return False
+
 #right after someone signs up, create a new profile for them
 @receiver(user_signed_up)
 def create_profile(request, user, **kwargs):

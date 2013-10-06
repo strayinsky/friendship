@@ -1,4 +1,5 @@
-from django.http import HttpResponse, request
+from django.http import HttpResponse, request, HttpResponseRedirect
+from django.shortcuts import get_object_or_404
 from django.views.generic import UpdateView
 from django.views.generic.base import View, TemplateResponseMixin, TemplateView
 from friends.forms import ActivitiesForm
@@ -20,8 +21,17 @@ class ConnectView(TemplateView):
         return context
 
 
-class InterestsView(UpdateView):
-    template_name = "friends/interests.html"
+class ProfileView(UpdateView):
+    template_name = "friends/profile.html"
     form_class = ActivitiesForm
     model = Profile
     success_url = '/friends'#this is required
+
+    def get_object(self, queryset=None):
+        return self.request.user.profile
+
+def checkprofile(request):
+    foo = request.user.profile
+    if foo.profile_complete():
+        return HttpResponseRedirect("/friends/connect")
+    return HttpResponseRedirect("/friends/profile")

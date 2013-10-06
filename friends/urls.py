@@ -6,5 +6,7 @@ from friends import views
 urlpatterns = patterns('',
                        url(r'^$', views.HomeView.as_view(), name='home'),
                        url(r'^connect$', login_required(views.ConnectView.as_view()), name='connect'),
-                       url(r'^interests/(?P<pk>\d+)/$', login_required(views.InterestsView.as_view()), name='interests'),
+                       url(r'^profile$', login_required(views.ProfileView.as_view()), name='profile'),
+                       url(r'^checkprofile$', views.checkprofile, name='checkprofile'),
 )
+
